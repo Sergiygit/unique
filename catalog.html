@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>UNIQUE</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230308110530">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,regular&display=swap&_v=20230308110530" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,800,900&display=swap&_v=20230308110530" rel="stylesheet" />
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__logo">
+					<a href="../index.html" class="header__logo-link">
+						<img src="img/logo.svg" alt="image_logo">
+					</a>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item  ">
+								<a href="../index.html" class="menu__link _active">Главная</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto=".about" class="menu__link">О компании</a>
+							</li>
+							<li class="menu__item">
+								<a href="../catalog.html" class="menu__link">Каталог</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto=".photo-report" class="menu__link">Фотоотчёт</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto=".reviews" class="menu__link">Отзывы</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto=".footer" class="menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="bread-crumps__container">
+				<div class="bread-crumps">
+					<a href="./index.html" class="bread-crumps__body">
+						<img src="img/back-arrow.svg" alt="arrow-back">
+						<div class="bread-crumps__back">
+							Главная
+						</div>
+					</a>
+				</div>
+			</div>
+			<section class="page__main-catalog">
+				<div class="header-catalog__container">
+					<h1 class="header-catalog__title">
+						Бензиновые авто
+					</h1>
+					<div class="header-catalog__value">
+						567 моделей / 11 страниц
+					</div>
+				</div>
+				<div class="main-catalog__container">
+					<div class="main-catalog__content">
+						<div class="main-catalog__sidebar-catalog sidebar-catalog">
+							<div data-spollers class="sidebar-catalog__spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">Поставщик <span>2</span></button>
+									<div class="spollers__body">
+										<div class="sidebar-catalog__checkbox">
+											<input id="dc_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="dc_1" class="checkbox__label"><span class="checkbox__text">Китай <p>(150)</p></span></label>
+										</div>
+										<div class="sidebar-catalog__checkbox">
+											<input id="dc_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+											<label for="dc_2" class="checkbox__label"><span class="checkbox__text">Япония <p>(50)</p></span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-spollers class="sidebar-catalog__spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">Категория товара <span>3</span></button>
+									<div class="spollers__body">
+										<div class="sidebar-catalog__checkbox">
+											<input id="cc_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="cc_1" class="checkbox__label"><span class="checkbox__text">Электрокары</span></label>
+										</div>
+										<div class="sidebar-catalog__checkbox">
+											<input id="cc_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+											<label for="cc_2" class="checkbox__label"><span class="checkbox__text">Бензиновые авто</span></label>
+										</div>
+										<div class="sidebar-catalog__checkbox">
+											<input id="cc_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="2" name="form[]">
+											<label for="cc_3" class="checkbox__label"><span class="checkbox__text">Спец. техника</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div data-spollers class="sidebar-catalog__spollers">
+								<div class="spollers__item">
+									<button type="button" data-spoller class="spollers__title">Цена</button>
+									<div class="spollers__body">
+										<div class="price-sidebar__body">
+											<div class="price-sidebar__from">
+												<p>от</p>
+												<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="price-sidebar__input">
+											</div>
+											<div class="price-sidebar__to">
+												<p>до</p>
+												<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="price-sidebar__input">
+												<p>$</p>
+											</div>
+										</div>
+										<button class="price-sidebar__button">
+											ПРИМЕНИТЬ
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="sidebar-catalog__brand-catalog brand-catalog">
+								<div data-spollers class="brand-catalog__spollers">
+									<div class="spollers__item">
+										<button type="button" data-spoller class="spollers__title">Бренд товара 20</button>
+										<div class="brand-catalog__body">
+											<div data-showmore class="brand-catalog__show-more">
+												<div data-showmore-content class="brand-catalog__content">
+													<div class="sidebar-catalog__checkbox">
+														<input id="bc_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="bc_1" class="checkbox__label"><span class="checkbox__text">BYD <p>(12)</p></span></label>
+													</div>
+													<div class="sidebar-catalog__checkbox">
+														<input id="bc_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="bc_2" class="checkbox__label"><span class="checkbox__text">Gelly <p>(66)</p></span></label>
+													</div>
+													<div class="sidebar-catalog__checkbox">
+														<input id="bc_3" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="bc_3" class="checkbox__label"><span class="checkbox__text">Changan <p>(76)</p></span></label>
+													</div>
+													<div class="sidebar-catalog__checkbox">
+														<input id="bc_4" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="bc_4" class="checkbox__label"><span class="checkbox__text">Eado<p>(43)</p></span></label>
+													</div>
+													<div class="sidebar-catalog__checkbox">
+														<input id="c_5" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="c_5" class="checkbox__label"><span class="checkbox__text">BYD <p>(12)</p></span></label>
+													</div>
+													<div class="sidebar-catalog__checkbox">
+														<input id="bc_6" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="bc_6" class="checkbox__label"><span class="checkbox__text">Gelly <p>(66)</p></span></label>
+													</div>
+													<div class="sidebar-catalog__checkbox">
+														<input id="bc_7" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="bc_7" class="checkbox__label"><span class="checkbox__text">Changan <p>(76)</p></span></label>
+													</div>
+													<div class="sidebar-catalog__checkbox">
+														<input id="bc_8" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+														<label for="bc_8" class="checkbox__label"><span class="checkbox__text">Eado<p>(43)</p></span></label>
+													</div>
+												</div>
+												<button hidden data-showmore-button type="button" class="brand-catalog__more"><span>Показать ещё...</span><span>Скыть</span></button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-catalog__body-catalog body-catalog">
+							<div class="body-catalog__items-catalog items-catalog">
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__label">
+										TOP
+									</div>
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan Uni - V
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											8000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan Eado EV460
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											10000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan UNI - K
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											14000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan Uni - V
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											8000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__label">
+										TOP
+									</div>
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan Uni - V
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											8000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/02.webp" type="image/webp"><img src="img/catalog/02.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan Eado EV460
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											10000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/03.webp" type="image/webp"><img src="img/catalog/03.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan UNI - K
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											14000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+								<div class="items-catalog__catalog-item catalog-item">
+									<div class="catalog-item__image">
+										<picture><source srcset="img/catalog/01.webp" type="image/webp"><img src="img/catalog/01.png" alt="catalog-car-image"></picture>
+									</div>
+									<div class="catalog-item__category">
+										Электрокар
+									</div>
+									<div class="catalog-item__name">
+										Changan Uni - V
+									</div>
+									<ul class="catalog-item__parametrs">
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/01.svg" alt="icon"><span>Двигатель:</span> 2.0T л/ 233 л.с. / бензин
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/02.svg" alt="icon"><span>Крутящий момент:</span> 390 Н*м
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/03.svg" alt="icon"><span>Трансмиссия:</span> 8 ступ. автомат
+										</li>
+										<li class="catalog-item__parametrs-item">
+											<img src="img/catalog/04.svg" alt="icon"><span>Кузов:</span> Хэтчбек
+										</li>
+									</ul>
+									<div class="catalog-item__footer">
+										<div class="catalog-item__price">
+											8000 $
+										</div>
+										<a href="#" class="catalog-item__button">
+											Заказать
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<h2 class="footer__title title">
+					КОНТАКТЫ
+				</h2>
+				<div class="footer__body">
+					<a href="#" class="footer__phone-block">
+						<div class="footer__icon-phone">
+							<img src="img/footer/phone.svg" alt="phone-icon">
+						</div>
+						<div class="footer__phone-number">
+							+996 707 818 717
+						</div>
+					</a>
+					<a href="#" class="footer__location-block">
+						<div class="footer__location-icon">
+							<img src="img/footer/location.svg" alt="location-item">
+						</div>
+						<div class="footer__adress-location">
+							г. Бишкек ул. Турузбекова 109/3 205
+						</div>
+					</a>
+					<div class="footer__socials-block">
+						<p class="footer__socials-text">
+							Следите за нашими новостями:
+						</p>
+						<div class="footer__socials-link-block">
+							<a href="#" class="footer__socials-link">
+								<img src="img/footer/logos_telegram.svg" alt="socials-icon">
+							</a>
+							<a href="#" class="footer__socials-link">
+								<img src="img/footer/instagram.svg" alt="socials-icon">
+							</a>
+							<a href="#" class="footer__socials-link">
+								<img src="img/footer/logos_facebook.svg" alt="socials-icon">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20230308110530"></script>
+</body>
+
+</html>
