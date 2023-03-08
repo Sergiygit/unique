@@ -915,16 +915,51 @@ h6 {
 }
 
 .recommend__image {
-  height: 200px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
+  position: relative;
+}
+
+@supports (height: clamp( 11.875rem , 11.3887763371rem  +  2.4311183144vw , 13.75rem )) {
+  .recommend__image {
+    height: clamp( 11.875rem , 11.3887763371rem  +  2.4311183144vw , 13.75rem );
+  }
+}
+
+@supports not (height: clamp( 11.875rem , 11.3887763371rem  +  2.4311183144vw , 13.75rem )) {
+  .recommend__image {
+    height: calc(11.875rem + 1.875 * (100vw - 20rem) / 77.125);
+  }
+}
+
+@supports (width: clamp( 15rem , 14.0275526742rem  +  4.8622366288vw , 18.75rem )) {
+  .recommend__image {
+    width: clamp( 15rem , 14.0275526742rem  +  4.8622366288vw , 18.75rem );
+  }
+}
+
+@supports not (width: clamp( 15rem , 14.0275526742rem  +  4.8622366288vw , 18.75rem )) {
+  .recommend__image {
+    width: calc(15rem + 3.75 * (100vw - 20rem) / 77.125);
+  }
+}
+
+.recommend__image img {
+  position: absolute;
+  height: 72%;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .recommend__item-title {
@@ -1074,16 +1109,51 @@ h6 {
 }
 
 .leader__image {
-  height: 200px;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
+  position: relative;
+}
+
+@supports (height: clamp( 11.875rem , 11.3887763371rem  +  2.4311183144vw , 13.75rem )) {
+  .leader__image {
+    height: clamp( 11.875rem , 11.3887763371rem  +  2.4311183144vw , 13.75rem );
+  }
+}
+
+@supports not (height: clamp( 11.875rem , 11.3887763371rem  +  2.4311183144vw , 13.75rem )) {
+  .leader__image {
+    height: calc(11.875rem + 1.875 * (100vw - 20rem) / 77.125);
+  }
+}
+
+@supports (width: clamp( 15rem , 14.0275526742rem  +  4.8622366288vw , 18.75rem )) {
+  .leader__image {
+    width: clamp( 15rem , 14.0275526742rem  +  4.8622366288vw , 18.75rem );
+  }
+}
+
+@supports not (width: clamp( 15rem , 14.0275526742rem  +  4.8622366288vw , 18.75rem )) {
+  .leader__image {
+    width: calc(15rem + 3.75 * (100vw - 20rem) / 77.125);
+  }
+}
+
+.leader__image img {
+  position: absolute;
+  height: 72%;
+  width: 100%;
+  top: 10%;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .leader__item-title {
